@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
-# Print "Hi" if number equals 9 using while and if
+# Prints "Best School" 10 times, "Hi" at count 9, then "Best School" once more
 
-num=0
-while [ $num -le 10 ]; do
-  if [ $num -eq 9 ]; then
+count=0
+while [ $count -le 10 ]; do
+  if [ $count -eq 9 ]; then
     echo "Hi"
-    break
+  else
+    echo "Best School"
   fi
-  num=$((num + 1))
+  count=$((count + 1))
 done
