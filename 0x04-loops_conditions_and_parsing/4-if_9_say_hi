@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Prints "Hi" if 9 equals 9
+
+if [ 9 -eq 9 ]; then
+  echo "Hi"
+fi
