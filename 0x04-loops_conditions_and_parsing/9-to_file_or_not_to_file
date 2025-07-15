@@ -1,9 +1,16 @@
 #!/usr/bin/env bash
-# Save all regular file names (sorted) into ls_files
+# Check the file "school" and print its status
 
-> ls_files
-for f in *; do
-  if [[ -f $f ]]; then
-    echo "$f"
+if [[ -e school ]]; then
+  if [[ -d school ]]; then
+    echo "school exists but it’s a directory"
+  elif [[ -f school ]]; then
+    if [[ ! -s school ]]; then
+      echo "school exists but empty"
+    else
+      echo "school exists and is a regular file"
+    fi
   fi
-done | sort > ls_files
+else
+  echo "school doesn’t exist"
+fi
