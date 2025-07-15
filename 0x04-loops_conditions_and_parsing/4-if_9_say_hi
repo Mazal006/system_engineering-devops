@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
-# Prints "Hi" if 9 equals 9
+# Use while loop and if statement to print "Hi" if number equals 9
 
-if [ 9 -eq 9 ]; then
-  echo "Hi"
-fi
+num=9
+while [ $num -eq 9 ]; do
+  if [ $num -eq 9 ]; then
+    echo "Hi"
+    break
+  fi
+done
