@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
-# Use while loop and if statement to print "Hi" if number equals 9
+# Print "Hi" if number equals 9 using while and if
 
-num=9
-while [ $num -eq 9 ]; do
+num=0
+while [ $num -le 10 ]; do
   if [ $num -eq 9 ]; then
     echo "Hi"
     break
   fi
+  num=$((num + 1))
 done
