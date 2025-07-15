@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Print numbers 1 to 20 replacing multiples of 4 and/or 9 with 4, 9 or 4 9
+
+num=1
+until [ $num -gt 20 ]; do
+  if [ $((num % 4)) -eq 0 ] && [ $((num % 9)) -eq 0 ]; then
+    echo "4 9"
+  elif [ $((num % 4)) -eq 0 ]; then
+    echo "4"
+  elif [ $((num % 9)) -eq 0 ]; then
+    echo "9"
+  else
+    echo "$num"
+  fi
+  num=$((num + 1))
+done
