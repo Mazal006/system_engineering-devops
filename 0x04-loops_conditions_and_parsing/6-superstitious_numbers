@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
-# Print numbers 1 to 20 and superstition messages after matching numbers
+# Print numbers 1 to 20 with superstition messages
 
-num=1
-while [ $num -le 20 ]; do
-  echo "$num"
-  case $num in
+i=1
+while [ $i -le 20 ]; do
+  echo "$i"
+  case $i in
     4) echo "bad luck from China" ;;
     8) echo "bad luck from Japan" ;;
     17) echo "bad luck from Italy" ;;
   esac
-  num=$((num + 1))
+  i=$((i + 1))
 done
