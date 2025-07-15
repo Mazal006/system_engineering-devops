@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# List all files in current directory using for loop
+
+for file in *; do
+  echo "$file"
+done
