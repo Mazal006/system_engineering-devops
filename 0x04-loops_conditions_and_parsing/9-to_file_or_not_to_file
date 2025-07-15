@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Save all regular file names (sorted) into ls_files
+
+> ls_files
+for f in *; do
+  if [[ -f $f ]]; then
+    echo "$f"
+  fi
+done | sort > ls_files
