@@ -4,6 +4,6 @@
 trap 'echo "OK"' SIGTERM
 
 while true; do
-  echo "To infinity and beyond"
+  echo "I am invincible!!!"
   sleep 2
 done
