@@ -1,2 +1,5 @@
-#!/bin/bash
-echo "\"Best School\""
+#!/usr/bin/env bash
+# Prints "Best School" 5 times using a for loop
+for i in {1..5}; do
+  echo "Best School"
+done
