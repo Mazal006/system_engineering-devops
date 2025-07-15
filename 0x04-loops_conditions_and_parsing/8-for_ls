@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
-# List all files in current directory using for loop
+# Print files starting with "file" and script name last
 
-for file in *; do
-  echo "$file"
+for f in file*; do
+  if [[ -f $f ]]; then
+    echo "$f"
+  fi
 done
+echo "8-for_ls"
