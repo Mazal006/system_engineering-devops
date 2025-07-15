@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# This script lists all running processes including those without a TTY, showing process hierarchy
+# This script displays all running processes with user, PID, CPU%, MEM%, TTY, STAT, START, TIME, COMMAND and shows process hierarchy
 
-ps -ef --forest
+ps aux --forest
